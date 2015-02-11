@@ -50,11 +50,30 @@ void Phone_Directory::load_data(const string& source_name)
 	}
 }
 
-/** Add an entry or change an existing entry.
-	@param name The name of the person being added or changed
-	@param number The new number to be assigned
-	@return The old number or, if a new entry, an empty string
-	*/
+class Directory_Entry
+{
+public:
+	Directory_Entry() {} // Default no-argument constructor 
+	Directory_Entry(std::string the_name, std::string the_number) 
+	{
+		// constructor not implemented yet
+	}
+	std::string get_name() const 
+	{
+		return ""; // method not implemented yet
+	}
+	std::string get_number() const 
+	{
+		return ""; // method not implemented yet
+	}
+	void set_number(const std::string& new_number) 
+	{
+		// method not implemented yet
+	}
+private:
+
+};
+
 string Phone_Directory::add_or_change_entry(const string& name,
 	const string& number)
 {
